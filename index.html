@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+       
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ShopKart</a>
+            <button class="btn btn-outline-primary text-light" id="btnCart"><i class="bi bi-cart"> Card</i>
+            <span class="badge bg-dark rounded-pill cardCount text-light">0</span>
+        </button>
+        </div>
+    </nav>
+    <header class="bg-primary py-5">
+        <div class="container my-5 text-center text-white"> 
+        <div>
+            <h3 class="text-white display-4 fw-semibold"><i class="bi bi-bag"></i> Shopping card</h3>
+            <p class="lead fw-normal text-white-50">Simple app in javascript</p>
+        </div>
+        </div>
+
+    </header>
+
+    <section class="py-5">
+        <div class="container mt-5">
+           
+         <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4" id="productPage">
+
+         </div>        
+   </div>
+    </section>
+
+     <footer class="bg-primary py-5 text-white text-center">
+        <p>Copyright &copy:ShopKart2024</p>
+     </footer>
+
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-tittle text-uppercase text-primary">Cart Items</div>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                              <th>image</th>
+                              <th>Name</th>
+                              <th>Rate</th>
+                              <th>Quanity</th>
+                              <th>Price</th>
+                              <th>Remove</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody class="tbody " id="tbody">
+
+                        </tbody>
+
+                        <tfoot class="tfoot">
+                          <tr>
+                              <th class="text-end total" colspan="5">Tottal Rs : 0.00</th>
+                          </tr>
+                        </tfoot>
+                        </table>
+                        
+                </div>
+            </div>
+        </div>
+      </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
